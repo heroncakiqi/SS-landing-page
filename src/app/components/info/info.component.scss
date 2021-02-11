@@ -1,17 +1,25 @@
 .info-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  padding-top: 130px;
   .entry-info {
     display: flex;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1090px;
     padding: 0 24px;
     align-items: center;
     position: relative;
+    .info-text {
+      h1 {
+        margin-bottom: 60px;
+      }
+      width: 34%;
+    }
     img {
       position: absolute;
       right: 0;
+      top: -40px;
     }
   }
   .first-section-img {

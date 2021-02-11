@@ -1,0 +1,13 @@
+<div class="slide-wrapper">
+  <div class="slide-item-wrapper">
+    <img [src]="slider.slides[index].image" alt="">
+    <span>{{slider.slides[index].title}} {{index + 1}}</span>
+  </div>
+  <div class="slide-info-text">
+    <h1>{{slider.description}}</h1>
+    <div>
+      <img class='prev-arrow' (click)="handlePrev()" [src]="slider.leftArrow">
+      <img (click)="handleNext()" [src]="slider.rightArrow">
+    </div>
+  </div>
+</div>

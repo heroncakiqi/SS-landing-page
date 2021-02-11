@@ -5,12 +5,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { InfoComponent } from './components/info/info.component';
+import { ImageSlideComponent } from './components/image-slide/image-slide.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    InfoComponent
+    InfoComponent,
+    ImageSlideComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

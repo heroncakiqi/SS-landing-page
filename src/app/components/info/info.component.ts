@@ -8,12 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class InfoComponent implements OnInit {
 
   @Input()
-  data: any
+  data: any;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.data)
+    console.log(this.data);
   }
 
 }

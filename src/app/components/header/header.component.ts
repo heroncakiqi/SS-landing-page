@@ -9,7 +9,7 @@ import { DataService } from '../../data.service';
 export class HeaderComponent implements OnInit {
 
   @Input()
-  data: any
+  data: any;
 
   constructor() { }
 
