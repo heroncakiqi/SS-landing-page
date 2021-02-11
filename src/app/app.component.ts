@@ -7,9 +7,11 @@ import { DataService } from './data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  data: object
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
     this.dataService.getData();
+    this.dataService.data.subscribe(res => this.data = res);
   }
 }
