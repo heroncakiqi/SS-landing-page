@@ -46,14 +46,6 @@ export class ImageSlideComponent implements OnInit {
     }
   }
 
-  setZIndex(itemIndex) {
-    if(itemIndex === this.index - 1) {
-      return 1
-    } else {
-      return 0
-    }
-  }
-
   ngOnInit(): void {
     console.log(this.slider);
   }
