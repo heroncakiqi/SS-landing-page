@@ -1,10 +1,24 @@
 import { Component, Input, OnInit } from '@angular/core';
-
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+} from '@angular/animations';
 
 @Component({
   selector: 'app-image-slide',
   templateUrl: './image-slide.component.html',
   styleUrls: ['./image-slide.component.scss'],
+  animations: [
+    trigger('flyIn', [
+      state('in', style({
+         transform: 'translateX(0)',
+         opacity: 1
+      })),
+    ]),
+  ]
 })
 export class ImageSlideComponent implements OnInit {
   @Input()
@@ -26,6 +40,14 @@ export class ImageSlideComponent implements OnInit {
     this.index --;
     } else {
       this.index = this.slider.slides.length - 1;
+    }
+  }
+
+  setZIndex(itemIndex) {
+    if(itemIndex === this.index - 1) {
+      return 1
+    } else {
+      return 0
     }
   }
 
