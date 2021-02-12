@@ -1,0 +1,11 @@
+
+{
+  "/api": {
+    "target": "http://prishtinatask.scoopandspoon.at/api/page.php",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

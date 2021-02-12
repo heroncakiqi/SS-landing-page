@@ -9,7 +9,7 @@ export class DataService {
   private dataSub: Subject<any> = new Subject<any>();
   public data = this.dataSub.asObservable();
 
-  private url = 'https://cors-anywhere.herokuapp.com/prishtinatask.scoopandspoon.at/api/page.php';
+  private url = 'http://localhost:4200/api';
 
   constructor(private http: HttpClient) { }
 

@@ -17,6 +17,9 @@ import {
          transform: 'translateX(0)',
          opacity: 1
       })),
+      state('showText', style({
+        opacity: 1
+     })),
     ]),
   ]
 })

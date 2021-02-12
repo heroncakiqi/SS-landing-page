@@ -1,8 +1,7 @@
 .info-section {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-
+  align-items: center;
   .entry-info {
     display: flex;
     width: 100%;
@@ -10,20 +9,40 @@
     align-items: center;
     position: relative;
     .info-text {
+      padding: 10px;
       h1 {
-    
+        margin-top: 130px;
+        margin-bottom: 75px;
       }
       width: 100%;
       max-width: 480px;
     }
     img {
+      position: absolute;
       width: 100%;
+      max-width: 590px;
       right: 0;
-      top: -40px;
+      top: 140px;
     }
   }
   .first-section-img {
     width: 100%;
-    margin-top: -200px;
+    max-width: 1441px;
+    margin-top: -20px;
+  }
+  @media(max-width: 1035px) {
+    .entry-info {
+      img {
+        position: relative;
+      }
+    }
+  }
+  @media(max-width: 986px) {
+    .entry-info {
+      flex-direction: column;
+      img {
+        top: 0;
+      }
+    }
   }
 }

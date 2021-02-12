@@ -2,7 +2,7 @@
   <div class="slide-item-wrapper">
       <div class="slide-image" *ngFor="let slide of slider.slides; let i = index" >
         <img [@flyIn]="i === index && 'in'" [src]="slide.image" alt="">
-        <span>{{slide.title}}</span>
+        <span [@flyIn]="i === index && 'showText'">{{slide.title}}</span>
       </div>
   </div>
   <div class="slide-info-text">
