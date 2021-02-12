@@ -7,4 +7,9 @@
   img {
     margin: 32px;
   }
+  @media(max-width: 786px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
 }
